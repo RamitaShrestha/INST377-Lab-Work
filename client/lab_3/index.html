@@ -1,5 +1,52 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramita Lab 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div>
+    <div class="wrapper">
+      <!-- wrapper -->
+      <div class="header"><h1>Ramita Shrestha's Labs For INST377</h1></div>
+      <div class="container">
+        <!-- container -->
+        <div class="left_section box">
+          <!-- left inputs -->
+          <h2>Album Names</h2>
+          <div class="box">
+          <ol>
+            <li><header>Yeah Yeah Yeahs - Fever To Tell</header></li>
+            <li><header>Underworld -Dubnobasswithmyheadman</head></li>
+            <li><header>Young Fathers -Cocoa Butter</header></li>
+            <li><header>Sleigh Bells - Treats</header></li>
+            <li><header>Handsome Furs - Face Control</header></li>
+          </ol>
+          </div>
+        </div>
+        <div class="right_section box"> <!-- right side -->
+          <h2>Image Carousel</h2>
+          <div class="carousel">
+              <button class="Prev">Prev</button>
+              <div class="slides">
+                <div class="carousel_item visible"><img id="slide_1" src="images/bird1.jpeg" alt="An image of birds"/></div>
+                <div class="carousel_item hidden"><img id="slide_2" src="images/bird2.jpeg" alt="An image of birds"/></div>
+                <div class="carousel_item hidden"><img id="slide_3" src="images/bird3.jpeg" alt="An image of birds"/></div>
+                <div class="carousel_item hidden"><img id="slide_4" src="images/bird4.jpeg" alt="An image of birds"/></div>
+              </div>
+              <button class="next">Next</button>
+          </div>
+          <div class="box">Description of the images above.</div>
+        </div>
+      </div>
+    </div> 
+    
+    <footer class="footer">MY GITHUB ACCOUNT NAME<a href="http://github.com/RamitaShrestha/INST377-Lab-Work/" target="_blank" rel="noopener noreferrer"> RamitaShrestha INST377 Github Org</a></footer>
+  </div>
+  <script src="script.js" ></script>
+</body>
+</html>
