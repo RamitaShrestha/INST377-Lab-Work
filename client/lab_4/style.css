@@ -121,7 +121,7 @@ form {
   border: 2px dashed;
   border-radius: 4px;
 
-  width: fit-content;
+  /*width: fit-content;*/
   height:fit-content;
   padding: 1.5rem;
   margin: 0 auto;
@@ -132,6 +132,7 @@ form {
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
+  flex-grow: 2;
 }
 
 .right_section {
@@ -139,7 +140,7 @@ form {
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
-  max-width: 450px;
+  /*max-width: 450px;*/
   display: flex;
   flex-direction: column;
 }
@@ -301,25 +302,22 @@ form input {
     margin-bottom: 0.5rem;
   }
 
-/* How To Write A Media Query For Small Screens */
-
-@media only screen and (max-width: 736px){
-    /* Rules in here will only apply when a screen is the correct size */
-    /* check it out by using your developer tools to shrink your screen-size */
-    .container {
-      background-color: rgba(235, 193, 226, 0.65);
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-}
 
 .container {
-  background-color: red;
+  background-color: rgb(228, 156, 156);
 }
 
 @media only screen and (max-width: 736px){
-    .container {
-      background-color: blue;
-    }
+  /* Rules in here will only apply when a screen is the correct size */
+  /* check it out by using your developer tools to shrink your screen-size */
+  .container {
+    background-color: rgba(235, 193, 226, 0.65);
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+  }
+
+.left_section, .right_section{
+  flex-grow: 1;
+}
 }
