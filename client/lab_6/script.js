@@ -18,6 +18,17 @@ function getRandomIntInclusive(min, max) {
 
 function injectHTML(list) {
   console.log('fired injectHTML');
+  const restoList = document.querySelector("#restaurant_list");
+  restoList.innerHTML = '';
+
+  const listResto = document.createElement('ol');
+  restoList.appendChild(listResto);
+  list.forEach(item => {
+    const rL = document.createElement('li');
+    rL.innerText = item.name;
+    listResto.appendChild(rL);
+    // restoList.innerHTML += str;
+  });
   /*
   ## JS and HTML Injection
     There are a bunch of methods to inject text or HTML into a document using JS
@@ -36,12 +47,12 @@ function injectHTML(list) {
 
 function processRestaurants(list) {
   console.log('fired restaurants list');
-  const array_fried = [...Array(15).keys()]; // Special array notation
-  const new_fried_array = array_fried.map((item) => {
-    const index_fried = getRandomIntInclusive(0,list.length);
-    return list[index_fried]
+  const arrayFried = [...Array(15).keys()]; // Special array notation
+  const newFriedArray = arrayFried.map((item) => {
+    const indexFried = getRandomIntInclusive(0,list.length);
+    return list[indexFried]
   })
-  return new_fried_array;
+  return newFriedArray;
   
   /*
     ## Process Data Separately From Injecting It
