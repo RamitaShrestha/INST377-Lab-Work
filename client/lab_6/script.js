@@ -53,7 +53,34 @@ function processRestaurants(list) {
     return list[indexFried]
   })
   return newFriedArray;
-  
+/*
+function processRestaurants(list) {
+  console.log('fired restaurants list');
+  const arrayFried = [...Array(15).keys()]; // Special array notation
+  const useSet = arrayFried => {
+    return [...new Set(arrayFried)];
+    const newFriedArray = useSet.map((item) => {
+    const indexFried = getRandomIntInclusive(0,list.length);
+    return list[indexFried]
+    }  
+  })
+  return newFriedArray;
+
+
+  function processRestaurants(list) {
+  console.log('fired restaurants list');
+  const arrayFried = [...Array(15).keys()]; // Special array notation
+  const newFriedArray = arrayFried.map((item) => {
+    const uniqueArray = newFriedArray (list) => {
+      return [...new Set(uniqueArray)];
+      const indexFried = getRandomIntInclusive(0,list.length);
+      return list[indexFried]
+    }
+    
+  })
+  return newFriedArray;
+  */
+
   /*
     ## Process Data Separately From Injecting It
       This function should accept your 1,000 records
